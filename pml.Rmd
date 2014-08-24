@@ -6,22 +6,15 @@ This is the course project of Practical Machine Learning from coursera.
 The goal of this project is to predict the manner in which they did the exercise. 
 
 ```{r echo=FALSE,results='hide'}
-setwd("C:/Users/lywen/Desktop")
-install.packages('kernlab')
-install.packages('randomForest')
-install.packages('RANN')
-library('lattice')
-library('ggplot2')
 library(caret)
 library(kernlab)
 library(randomForest)
-
 ```
 
 # Loading data
 ```{r}
-raw_training <- read.csv('C:/Users/lywen/Desktop/pml-training.csv')
-raw_testing <- read.csv('C:/Users/lywen/Desktop/pml-testing.csv')
+raw_training <- read.csv('pml-training.csv')
+raw_testing <- read.csv('pml-testing.csv')
 
 set.seed(8888)
 inTrain <- createDataPartition(raw_training$classe, list=FALSE, p=.9)
