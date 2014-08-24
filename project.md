@@ -176,3 +176,4 @@ answers
 # Conclusion
 We are able to provide very good prediction of weight lifting style as measured with accelerometers.
 
+
